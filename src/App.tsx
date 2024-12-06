@@ -25,7 +25,6 @@ function App() {
     desiredTimeRef.current = time;
 
     intervalRef.current = setInterval(() => {
-      console.log("rendering");
       if (desiredTimeRef.current > 0) {
         setDesiredTime((prev) => {
           const updated = Math.max(prev - 1, 0);
